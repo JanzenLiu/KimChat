@@ -1,2 +1,5 @@
 # bash file
 github.sh
+
+# temporary file for python
+__pycache__
