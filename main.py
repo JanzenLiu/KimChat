@@ -9,5 +9,5 @@ def simply_reply(msg):
 	print(reply)
 	return(reply)
 
-itchat.auto_login()
+itchat.auto_login(enableCmdQR=2)
 itchat.run()
