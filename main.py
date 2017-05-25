@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from itchat.content import TEXT, PICTURE
 from MsgHandler import *
 
-#@itchat.msg_register(TEXT)
+@itchat.msg_register(TEXT)
 def simply_reply(msg):
 	msg.text = handleInMsg(msg.text)
 	print("In: %s" % msg.text)
@@ -14,6 +14,7 @@ def simply_reply(msg):
 		reply = handleOutMsg(reply)
 		print("Out: %s" % reply)
 		return(header + reply)
+
 @itchat.msg_register(PICTURE)
 def sticker_reply(msg):
 	content = BeautifulSoup(msg.Content, 'xml')
