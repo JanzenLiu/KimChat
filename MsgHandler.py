@@ -7,6 +7,7 @@ import urllib.request
 import urllib
 import json
 import random
+import os
 
 def replyWrapper():
 	# flag = True
@@ -45,21 +46,26 @@ def replyWrapper():
 				return(header + reply)
 
 	def reply_sticker(msg):
-		with open("MsgLog.txt", "w") as file:
-			for item in msg.items():
-				file.write("%s: %s\n" % (item[0], item[1]))
-				print(item[0], ": ", item[1])
+		# with open("MsgLog.txt", "w") as file:
+		# 	for item in msg.items():
+		# 		file.write("%s: %s\n" % (item[0], item[1]))
+		# 		print(item[0], ": ", item[1])
 		content = BeautifulSoup(msg.Content, 'xml')
-		if(content):
-			cdnurl = content.emoji.attrs['cdnurl']
-		with open("stickerLog.txt","a") as file:
-			file.write("%s\n" % cdnurl)
-		# itchat.send_raw_msg(msg["MsgType"], msg["Content"], msg["FromUserName"])
-		# content = xmltodict.parse(content)
-		# content = json.dumps(content)
-		# print(content)
-		itchat.send_image("facepalm.png", msg["FromUserName"])
-		return cdnurl
+		if(content.emoji):
+			# cdnurl = content.emoji.attrs['cdnurl']
+			# with open("stickerLog.txt","a") as file:
+			# 	file.write("%s\n" % cdnurl)
+			# itchat.send_raw_msg(msg["MsgType"], msg["Content"], msg["FromUserName"])
+			# content = xmltodict.parse(content)
+			# content = json.dumps(content)
+			# print(content)
+			msg['Text'](os.path.join(STICKER_DIR, msg.fileName))
+			itchat.send_image(os.path.join(STICKER_DIR, msg.fileName), msg['FromUserName'])
+			# return cdnurl
+		else:
+			# msg['Text'](msg.fileName)
+			# itchat.send_image(msg.fileName, msg['FromUserName'])
+			itchat.send_image('sticker/facepalm.gif', msg['FromUserName'])
 
 	def getReply(msg):
 		nonlocal cache
