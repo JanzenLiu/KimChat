@@ -1,30 +1,30 @@
-MediaId: 
-NewMsgId: 2285008048362974615
-Status: 3
-User: {'HeadImgFlag': 1, 'UserName': '@8c6b02e64a34e0f3af562a0adbd441941181d2a52a4f74623bac929b52c459c7', 'Alias': '', 'RemarkName': '', 'OwnerUin': 0, 'MemberList': <ContactList: []>, 'KeyWord': '', 'UniFriend': 0, 'AttrStatus': 33558629, 'ContactFlag': 2049, 'DisplayName': '', 'Statues': 0, 'Province': '香港', 'EncryChatRoomId': '', 'VerifyFlag': 0, 'RemarkPYInitial': '', 'MemberCount': 0, 'PYQuanPin': 'LIUChengTsung', 'StarFriend': 0, 'HeadImgUrl': '/cgi-bin/mmwebwx-bin/webwxgeticon?seq=667918017&username=@8c6b02e64a34e0f3af562a0adbd441941181d2a52a4f74623bac929b52c459c7&skey=@crypt_6a787fc6_801cca4c76e0858bd0d841f1c165f171', 'SnsFlag': 1, 'Sex': 1, 'ChatRoomId': 0, 'RemarkPYQuanPin': '', 'HideInputBarFlag': 0, 'WebWxPluginSwitch': 0, 'PYInitial': 'LIUCHENGTSUNG', 'Signature': 'Yesterday you said tomorrow', 'NickName': 'LIU,Cheng-Tsung', 'AppAccountFlag': 0, 'IsOwner': 0, 'City': '', 'Uin': 1765346934}
-MsgType: 47
-HasProductId: 1
-ForwardFlag: 0
-Text: <function get_download_fn.<locals>.download_fn at 0x7f524f2bfea0>
-StatusNotifyCode: 0
-FileName: 170526-015126.gif
-VoiceLength: 0
-PlayLength: 0
-StatusNotifyUserName: 
-FromUserName: @8c6b02e64a34e0f3af562a0adbd441941181d2a52a4f74623bac929b52c459c7
-AppMsgType: 0
-Ticket: 
 Content: 
-MsgId: 2285008048362974615
-AppInfo: {'Type': 0, 'AppID': ''}
+StatusNotifyCode: 0
+ToUserName: @fa77bf425677f83d9ff145db449371a10bdfd9e1486965ff10c66b92972fc00e
+VoiceLength: 0
+RecommendInfo: {'QQNum': 0, 'Province': '', 'OpCode': 0, 'Content': '', 'Sex': 0, 'AttrStatus': 0, 'Scene': 0, 'Signature': '', 'Alias': '', 'NickName': '', 'UserName': '', 'City': '', 'Ticket': '', 'VerifyFlag': 0}
+MediaId: 
+Ticket: 
 ImgStatus: 2
-FileSize: 
+HasProductId: 1
+MsgId: 6207323656703994032
+User: {'MemberList': <ContactList: []>, 'RemarkPYQuanPin': '', 'Statues': 0, 'UniFriend': 0, 'Uin': 1765346934, 'NickName': 'LIU,Cheng-Tsung', 'OwnerUin': 0, 'RemarkPYInitial': '', 'Alias': '', 'SnsFlag': 1, 'HideInputBarFlag': 0, 'UserName': '@fa77bf425677f83d9ff145db449371a10bdfd9e1486965ff10c66b92972fc00e', 'HeadImgUrl': '/cgi-bin/mmwebwx-bin/webwxgeticon?seq=667918017&username=@fa77bf425677f83d9ff145db449371a10bdfd9e1486965ff10c66b92972fc00e&skey=@crypt_6a787fc6_b0f10b5f811e194d1e15dc1b891f5d5d', 'PYInitial': 'LIUCHENGTSUNG', 'Province': '香港', 'RemarkName': '', 'AppAccountFlag': 0, 'KeyWord': '', 'PYQuanPin': 'LIUChengTsung', 'ChatRoomId': 0, 'AttrStatus': 33558629, 'HeadImgFlag': 1, 'StarFriend': 0, 'EncryChatRoomId': '', 'IsOwner': 0, 'Signature': 'Yesterday you said tomorrow', 'Sex': 1, 'WebWxPluginSwitch': 0, 'City': '', 'DisplayName': '', 'ContactFlag': 2049, 'VerifyFlag': 0, 'MemberCount': 0}
+AppInfo: {'AppID': '', 'Type': 0}
+NewMsgId: 6207323656703994032
 OriContent: 
-RecommendInfo: {'Province': '', 'Scene': 0, 'UserName': '', 'Content': '', 'OpCode': 0, 'Sex': 0, 'Alias': '', 'QQNum': 0, 'Signature': '', 'AttrStatus': 0, 'VerifyFlag': 0, 'NickName': '', 'Ticket': '', 'City': ''}
-ImgHeight: 240
-CreateTime: 1495734686
-Type: Picture
-SubMsgType: 0
-ToUserName: @8c6b02e64a34e0f3af562a0adbd441941181d2a52a4f74623bac929b52c459c7
 ImgWidth: 240
+AppMsgType: 0
+PlayLength: 0
+Text: <function get_download_fn.<locals>.download_fn at 0x7f58c6170400>
+FromUserName: @fa77bf425677f83d9ff145db449371a10bdfd9e1486965ff10c66b92972fc00e
+Type: Picture
+MsgType: 47
+StatusNotifyUserName: 
+Status: 3
+SubMsgType: 0
+FileName: 170526-024616.gif
 Url: 
+ForwardFlag: 0
+CreateTime: 1495737963
+ImgHeight: 240
+FileSize: 
