@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from itchat.content import TEXT, PICTURE
 from MsgHandler import *
 
-@itchat.msg_register(TEXT, PICTURE)
+@itchat.msg_register([TEXT, PICTURE])
 def simply_reply(msg):
 	reply = getReply(msg)
 	if(reply):

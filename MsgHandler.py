@@ -13,6 +13,7 @@ def replyWrapper():
 	cache = {}
 
 	def reply_text(msg):
+		nonlocal cache
 		fromUser = msg["FromUserName"]
 		text = msg.text
 		if(not fromUser in cache):
@@ -68,6 +69,9 @@ def replyWrapper():
 
 	def getReply(msg):
 		nonlocal flag
+		# print(msg)
+		# print(msg['Type'])
+		# print(msg['MsgType'])
 		if(flag and msg.text == stop):
 			flag = False
 		elif(not flag and msg.text == restart):
@@ -75,7 +79,7 @@ def replyWrapper():
 		if(flag):
 			if(msg['Type'] == TEXT):
 				return reply_text(msg)
-			elif(msg['Type'] == PICTURE and msg['msgType'] == 47):
+			elif(msg['MsgType'] == 47):
 				return reply_sticker(msg)
 	return getReply
 
