@@ -3,3 +3,8 @@ github.sh
 
 # temporary file for python
 __pycache__
+
+# log file
+MsgLog.txt
+stickerLog.txt
+
