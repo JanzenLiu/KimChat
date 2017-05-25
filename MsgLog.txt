@@ -1,0 +1,30 @@
+NewMsgId: 2580485994012621882
+FromUserName: @52f3b2a8e227e2de605940ecf0e80fc2080742379049046abf8b154001cd91e0
+ForwardFlag: 0
+ToUserName: @bde390c9df44e143c40e198ecb6c3006bb39622eeaca3b35bb4a766d7d7ba554
+ImgHeight: 200
+AppMsgType: 0
+Url: 
+MediaId: 
+Type: Picture
+ImgStatus: 2
+CreateTime: 1495708426
+MsgId: 2580485994012621882
+Content: <msg><emoji fromusername = "wxid_oox0o2ax8oiu52" tousername = "wxid_p8eqd632gjmo22" type="2" idbuffer="media:0_0" md5="286269ca0402801586bf69ef156c2622" len = "808866" productid="" androidmd5="286269ca0402801586bf69ef156c2622" androidlen="808866" s60v3md5 = "286269ca0402801586bf69ef156c2622" s60v3len="808866" s60v5md5 = "286269ca0402801586bf69ef156c2622" s60v5len="808866" cdnurl = "http://emoji.qpic.cn/wx_emoji/kAyWiaDloX1oottVuAT7kumJPFiaUtHu0PXQQepn2u721474DmXUcytQ/" designerid = "" thumburl = "" encrypturl = "http://emoji.qpic.cn/wx_emoji/Bc2A90Kgm72Dl02PrnW954MYIepfrlWt9icBgdV5J400s60o4RUQgeQ/" aeskey= "49fc2b1c066b7406bcbcfc47ef30b87b" externurl = "http://emoji.qpic.cn/wx_emoji/BwfQo31bnx4Z8GSEmLweNmRU6WetQZib3f8MXBusAibXmbHEIIYmzyzceNn7dEfEBh/" externmd5 = "ac8da388aaf0866765cfdbbcfa12a684" width= "250" height= "200" ></emoji> </msg>
+Ticket: 
+AppInfo: {'Type': 0, 'AppID': ''}
+OriContent: 
+StatusNotifyUserName: 
+FileSize: 
+Status: 3
+MsgType: 47
+PlayLength: 0
+SubMsgType: 0
+Text: <function get_download_fn.<locals>.download_fn at 0x7f12c57b9c80>
+User: {'VerifyFlag': 0, 'Uin': 0, 'KeyWord': '', 'HeadImgUrl': '/cgi-bin/mmwebwx-bin/webwxgeticon?seq=658053975&username=@bde390c9df44e143c40e198ecb6c3006bb39622eeaca3b35bb4a766d7d7ba554&skey=@crypt_6a787fc6_08ed7176bf7d200fb52cb73d1bef3a97', 'HideInputBarFlag': 0, 'StarFriend': 0, 'OwnerUin': 0, 'City': '', 'AttrStatus': 33558565, 'MemberList': <ContactList: []>, 'ContactFlag': 2051, 'Sex': 2, 'Statues': 0, 'PYQuanPin': 'HItaa', 'DisplayName': '', 'RemarkPYInitial': '', 'RemarkName': '', 'RemarkPYQuanPin': '', 'Alias': '', 'UserName': '@bde390c9df44e143c40e198ecb6c3006bb39622eeaca3b35bb4a766d7d7ba554', 'PYInitial': 'HITAA', 'MemberCount': 0, 'SnsFlag': 17, 'EncryChatRoomId': '', 'IsOwner': 0, 'AppAccountFlag': 0, 'UniFriend': 0, 'ChatRoomId': 0, 'NickName': 'HItaa', 'Signature': '', 'Province': 'New Taipei City'}
+HasProductId: 0
+StatusNotifyCode: 0
+ImgWidth: 250
+RecommendInfo: {'VerifyFlag': 0, 'Alias': '', 'UserName': '', 'QQNum': 0, 'Ticket': '', 'OpCode': 0, 'City': '', 'Scene': 0, 'AttrStatus': 0, 'Sex': 0, 'Signature': '', 'Province': '', 'NickName': '', 'Content': ''}
+VoiceLength: 0
+FileName: 170525-183346.gif
