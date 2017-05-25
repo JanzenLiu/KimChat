@@ -8,3 +8,7 @@ __pycache__
 MsgLog.txt
 stickerLog.txt
 
+# local record
+head_img/
+
+jx.txt
