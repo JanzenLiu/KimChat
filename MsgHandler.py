@@ -9,19 +9,13 @@ import json
 import random
 
 def replyWrapper():
-	flag = True
+	# flag = True
 	cache = {}
 
 	def reply_text(msg):
 		nonlocal cache
 		fromUser = msg["FromUserName"]
 		text = msg.text
-		if(not fromUser in cache):
-			cache[fromUser] = {
-				'unreply_num': 0,
-				'unreply_wait': -1,
-				'msg': []
-			}
 		if(cache[fromUser]['unreply_wait'] == -1):
 			cache[fromUser]['unreply_wait'] = random.randint(0,MAX_UNREPLY)
 		cache[fromUser]['unreply_num'] += 1
@@ -68,15 +62,25 @@ def replyWrapper():
 		return cdnurl
 
 	def getReply(msg):
-		nonlocal flag
+		nonlocal cache
 		# print(msg)
 		# print(msg['Type'])
 		# print(msg['MsgType'])
-		if(flag and msg.text == stop):
-			flag = False
-		elif(not flag and msg.text == restart):
-			flag = True
-		if(flag):
+		fromUser = msg["FromUserName"]
+		if(not fromUser in cache):
+			cache[fromUser] = {
+				'flag': True,
+				'unreply_num': 0,
+				'unreply_wait': -1,
+				'msg': []
+			}
+		if(cache[fromUser]['flag'] and msg.text == stop):
+			cache[fromUser]['flag'] = False
+			print("Pause auto replying")
+		elif(not cache[fromUser]['flag'] and msg.text == restart):
+			cache[fromUser]['flag'] = True
+			print("Restart auto replying")
+		if(cache[fromUser]['flag']):
 			if(msg['Type'] == TEXT):
 				return reply_text(msg)
 			elif(msg['MsgType'] == 47):

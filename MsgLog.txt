@@ -1,30 +1,30 @@
-Url: 
-SubMsgType: 0
-Type: Picture
-ImgHeight: 200
-StatusNotifyUserName: 
-MsgId: 7367375187378968631
-ToUserName: @f0586c77e96bc33ed445fca2ff55eef1565f80ffec3ddc14b59bb30710ca3a96
-VoiceLength: 0
-AppMsgType: 0
-User: {'IsOwner': 0, 'OwnerUin': 0, 'EncryChatRoomId': '', 'HeadImgFlag': 1, 'AppAccountFlag': 0, 'RemarkPYInitial': '', 'City': '', 'MemberList': <ContactList: []>, 'PYInitial': 'LIUCHENGTSUNG', 'NickName': 'LIU,Cheng-Tsung', 'KeyWord': '', 'Province': '香港', 'Alias': '', 'PYQuanPin': 'LIUChengTsung', 'StarFriend': 0, 'UniFriend': 0, 'ChatRoomId': 0, 'MemberCount': 0, 'Signature': 'Yesterday you said tomorrow', 'AttrStatus': 33558629, 'Statues': 0, 'HeadImgUrl': '/cgi-bin/mmwebwx-bin/webwxgeticon?seq=667918017&username=@f0586c77e96bc33ed445fca2ff55eef1565f80ffec3ddc14b59bb30710ca3a96&skey=@crypt_6a787fc6_ed854b567d48c18e20a59512f3087ee0', 'DisplayName': '', 'UserName': '@f0586c77e96bc33ed445fca2ff55eef1565f80ffec3ddc14b59bb30710ca3a96', 'VerifyFlag': 0, 'ContactFlag': 2049, 'RemarkName': '', 'WebWxPluginSwitch': 0, 'HideInputBarFlag': 0, 'Sex': 1, 'RemarkPYQuanPin': '', 'SnsFlag': 1, 'Uin': 1765346934}
-Text: <function get_download_fn.<locals>.download_fn at 0x7f60e72fc048>
-RecommendInfo: {'Province': '', 'Scene': 0, 'VerifyFlag': 0, 'City': '', 'Ticket': '', 'UserName': '', 'Content': '', 'OpCode': 0, 'AttrStatus': 0, 'Alias': '', 'Sex': 0, 'NickName': '', 'QQNum': 0, 'Signature': ''}
-OriContent: 
+MediaId: 
+NewMsgId: 2285008048362974615
+Status: 3
+User: {'HeadImgFlag': 1, 'UserName': '@8c6b02e64a34e0f3af562a0adbd441941181d2a52a4f74623bac929b52c459c7', 'Alias': '', 'RemarkName': '', 'OwnerUin': 0, 'MemberList': <ContactList: []>, 'KeyWord': '', 'UniFriend': 0, 'AttrStatus': 33558629, 'ContactFlag': 2049, 'DisplayName': '', 'Statues': 0, 'Province': '香港', 'EncryChatRoomId': '', 'VerifyFlag': 0, 'RemarkPYInitial': '', 'MemberCount': 0, 'PYQuanPin': 'LIUChengTsung', 'StarFriend': 0, 'HeadImgUrl': '/cgi-bin/mmwebwx-bin/webwxgeticon?seq=667918017&username=@8c6b02e64a34e0f3af562a0adbd441941181d2a52a4f74623bac929b52c459c7&skey=@crypt_6a787fc6_801cca4c76e0858bd0d841f1c165f171', 'SnsFlag': 1, 'Sex': 1, 'ChatRoomId': 0, 'RemarkPYQuanPin': '', 'HideInputBarFlag': 0, 'WebWxPluginSwitch': 0, 'PYInitial': 'LIUCHENGTSUNG', 'Signature': 'Yesterday you said tomorrow', 'NickName': 'LIU,Cheng-Tsung', 'AppAccountFlag': 0, 'IsOwner': 0, 'City': '', 'Uin': 1765346934}
 MsgType: 47
+HasProductId: 1
 ForwardFlag: 0
-PlayLength: 0
-HasProductId: 0
-Ticket: 
+Text: <function get_download_fn.<locals>.download_fn at 0x7f524f2bfea0>
 StatusNotifyCode: 0
+FileName: 170526-015126.gif
+VoiceLength: 0
+PlayLength: 0
+StatusNotifyUserName: 
+FromUserName: @8c6b02e64a34e0f3af562a0adbd441941181d2a52a4f74623bac929b52c459c7
+AppMsgType: 0
+Ticket: 
+Content: 
+MsgId: 2285008048362974615
 AppInfo: {'Type': 0, 'AppID': ''}
 ImgStatus: 2
 FileSize: 
-FromUserName: @f0586c77e96bc33ed445fca2ff55eef1565f80ffec3ddc14b59bb30710ca3a96
-NewMsgId: 7367375187378968631
-Content: <msg><emoji fromusername = "wxid_oox0o2ax8oiu52" tousername = "wxid_oox0o2ax8oiu52" type="2" idbuffer="media:0_0" md5="286269ca0402801586bf69ef156c2622" len = "808866" productid="" androidmd5="286269ca0402801586bf69ef156c2622" androidlen="808866" s60v3md5 = "286269ca0402801586bf69ef156c2622" s60v3len="808866" s60v5md5 = "286269ca0402801586bf69ef156c2622" s60v5len="808866" cdnurl = "http://emoji.qpic.cn/wx_emoji/kAyWiaDloX1oottVuAT7kumJPFiaUtHu0PXQQepn2u721474DmXUcytQ/" designerid = "" thumburl = "" encrypturl = "http://emoji.qpic.cn/wx_emoji/Bc2A90Kgm72Dl02PrnW954MYIepfrlWt9icBgdV5J400s60o4RUQgeQ/" aeskey= "49fc2b1c066b7406bcbcfc47ef30b87b" externurl = "http://emoji.qpic.cn/wx_emoji/BwfQo31bnx4Z8GSEmLweNmRU6WetQZib3f8MXBusAibXmbHEIIYmzyzceNn7dEfEBh/" externmd5 = "ac8da388aaf0866765cfdbbcfa12a684" width= "250" height= "200" ></emoji> </msg>
-CreateTime: 1495734267
-MediaId: 
-Status: 3
-ImgWidth: 250
-FileName: 170526-014429.gif
+OriContent: 
+RecommendInfo: {'Province': '', 'Scene': 0, 'UserName': '', 'Content': '', 'OpCode': 0, 'Sex': 0, 'Alias': '', 'QQNum': 0, 'Signature': '', 'AttrStatus': 0, 'VerifyFlag': 0, 'NickName': '', 'Ticket': '', 'City': ''}
+ImgHeight: 240
+CreateTime: 1495734686
+Type: Picture
+SubMsgType: 0
+ToUserName: @8c6b02e64a34e0f3af562a0adbd441941181d2a52a4f74623bac929b52c459c7
+ImgWidth: 240
+Url: 
