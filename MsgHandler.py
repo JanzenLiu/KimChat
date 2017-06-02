@@ -11,25 +11,32 @@ import os
 
 def replyWrapper():
 	# flag = True
-	cache = {}
+	cache = {} # caching control info and unreplied message for each dialogue
 
 	def reply_text(msg):
 		nonlocal cache
 		fromUser = msg["FromUserName"]
 		text = msg.text
+		# update cache: regenerate unreply wait if necessary, increment unreply count by one, and append unreplied messages
 		if(cache[fromUser]['unreply_wait'] == -1):
 			cache[fromUser]['unreply_wait'] = random.randint(0,MAX_UNREPLY)
 		cache[fromUser]['unreply_num'] += 1
 		cache[fromUser]['msg'].append(text)
 		print("Wait Until: ", cache[fromUser]['unreply_wait'])
 		print("Unreplied: ", cache[fromUser]['unreply_num'])
+		# replace emotions by text
 		text = handleInMsg(text)
 		print("In: %s" % text)
+		# a little joke...
+		# if the message is thought funny, reply the facepalm sticker
 		if(is_funny(msg)):
 			itchat.send_image("facepalm.png", fromUser)
+		# keep silent until unreply count reach the preset unreply wait
 		if(cache[fromUser]['unreply_num'] >= cache[fromUser]['unreply_wait']):
+			# reset control info
 			cache[fromUser]['unreply_wait'] = -1
 			cache[fromUser]['unreply_num'] = 0
+			# post request with the incoming message to the turing chat robot API, use the response as raw reply
 			params = {
 				"key": APIKey,
 				"info": text
@@ -41,6 +48,7 @@ def replyWrapper():
 			reply = res.read().decode('utf-8')
 			reply = json.loads(reply)['text']
 			if(reply):
+				# replace text with emotions
 				reply = handleOutMsg(reply)
 				print("Out: %s" % reply)
 				return(header + reply)
@@ -50,8 +58,11 @@ def replyWrapper():
 		# 	for item in msg.items():
 		# 		file.write("%s: %s\n" % (item[0], item[1]))
 		# 		print(item[0], ": ", item[1])
+
+		# parse the message Content field to get information of the sticker
 		content = BeautifulSoup(msg.Content, 'xml')
 		if(content.emoji):
+			# for custom sticker, reply the sticker back			
 			# cdnurl = content.emoji.attrs['cdnurl']
 			# with open("stickerLog.txt","a") as file:
 			# 	file.write("%s\n" % cdnurl)
@@ -63,6 +74,7 @@ def replyWrapper():
 			itchat.send_image(os.path.join(STICKER_DIR, msg.fileName), msg['FromUserName'])
 			# return cdnurl
 		else:
+			# otherwise reply the custom facepalm sticker
 			# msg['Text'](msg.fileName)
 			# itchat.send_image(msg.fileName, msg['FromUserName'])
 			itchat.send_image('sticker/facepalm.gif', msg['FromUserName'])
@@ -73,6 +85,7 @@ def replyWrapper():
 		# print(msg['Type'])
 		# print(msg['MsgType'])
 		fromUser = msg["FromUserName"]
+		# for new dialogue, add new item to the cache dict
 		if(not fromUser in cache):
 			cache[fromUser] = {
 				'flag': True,
@@ -80,9 +93,12 @@ def replyWrapper():
 				'unreply_wait': -1,
 				'msg': []
 			}
+		# stop auto replying when the other side says the stop code
+		# notice that the control of auto replying is individual for each dialogue
 		if(cache[fromUser]['flag'] and msg.text == stop):
 			cache[fromUser]['flag'] = False
 			print("Pause auto replying")
+		# restart auto replying when the other side says the restart code
 		elif(not cache[fromUser]['flag'] and msg.text == restart):
 			cache[fromUser]['flag'] = True
 			print("Restart auto replying")
@@ -93,18 +109,22 @@ def replyWrapper():
 				return reply_sticker(msg)
 	return getReply
 
+### replace incoming emotions with text by removing the square brackets surrounding the emotion ###
 def handleInMsg(msg):
 	for emotion in emotions:
 		if emotion in msg:
 			msg = msg.replace(emotion, emotion[1:-1]) # remove the square brackets
 	return msg
 
+### replace particular outgoing text with emotions by adding surrounding square brackets to the text ###
 def handleOutMsg(msg):
 	for emotion in emotions:
 		if emotion[1:-1] in msg:
 			msg = msg.replace(emotion[1:-1], emotion)
 	return msg
-
+ 
+ ### a tiny joke... ###
+ # if specified keywords appear in the message, regard the message as a funny one
 def funnyWrapper():
 	funnyDict = {'hhh', '。。。', '哈哈哈'}
 	def funny(msg):
