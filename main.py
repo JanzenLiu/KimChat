@@ -14,3 +14,4 @@ def simply_reply(msg):
 itchat.auto_login()
 # itchat.auto_login(enableCmdQR=2) # enabled when run on the cloud server
 itchat.run()
+
